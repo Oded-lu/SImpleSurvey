@@ -1,0 +1,58 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>SimpleForm</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class='bg-info'>
+    <div class="container text-center">
+
+      <main id="main">
+        <H1 id="title">SurveySample</H1>
+        <p id="description">explanation about the survey</p>
+            <form id="survey-form" action="">
+              <div class="form-group">
+                <label id="name-label" for="name">name</label>
+              <input id="name" type="text" placeholder="name" required>
+                <label for="email" id="email-label">email</label>
+              <input id="email" type="email" placeholder="Email" minimum=3 required>
+                <label for="number" id="number-label">number</label>
+              <input id="number" type="number" placeholder="number" min=5 max=7>
+              </div>
+              <div class="form-group">
+                <p>Which option best describes your current role?</p>
+              <label id="dropdown">select a role</label>
+                <select name="select" id="dropdown">
+                  <option value="student">student</option>
+                  <option value="full time job">full time job</option>
+                  <option value="full time learner">full time learner</option>
+                  </div>
+              <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+              <label for ="definetely"> <input id="definetely" type="radio" name="feel" value="definetely">definetely</label>
+              <label for="maybe"><input id="maybe" type="radio" value="maybe"name="feel">maybe</label>
+              <label for="not sure"><input id="not sure" type="radio" value="not sure"name="feel">not sure</label>
+                </div>
+                <div class="form-group">
+                   <p>What is your favorite feature of freeCodeCamp?</p>
+              <label for="front end project"><input id="front end project" type="checkbox" value="front end project" name="favorite feature">front end project</label>
+              <label for="Back-end Projects"><input id="Back-end Projects" type="checkbox" value="Back-end Projects" name="favorite feature">Back-end Projects</label>
+              <label for="Data Visualization"><input id="Data Visualization" type="checkbox" value="Data Visualization" name="favorite feature">Data Visualization</label>
+                </div>
+                <div class="form-group">
+                  <p>Any comments or suggestions?</p>
+                  <label for="comments"></label>
+                  <textarea id="comments" name="comments" rows=4 lines=4>please insert your comments</textarea>
+                  <button type="submit" id="submit">submit</button>
+                </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
